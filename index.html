@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Weather app</title>
+</head>
+<body>
+
+    <div class="card">
+        <!-- VYhledávací políčko -->
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+
+        <!-- hláška pro špatný název města -->
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <!-- Contaner všech informací -->
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h2 class="temp"></h2>
+            <h2 class="city"></h2>
+
+            <!-- Detail information -->
+            <div class="details">
+
+                <!-- one inforamtion -->
+                <div class="one-information">
+                    <div>
+                        <p>Vlhkost vzduchu</p>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
+                
+                <!-- one inforamtion -->
+                <div class="one-information">
+                    <div>
+                        <p>Rychlost větru</p>
+                        <p class="wind"></p>
+                    </div>
+                </div>
+
+                <!-- one inforamtion -->
+                <div class="one-information">
+                    <div>
+                        <p>Max teplota</p>
+                        <p class="max-temp"></p>
+                    </div>
+                </div>
+
+                        <!-- one inforamtion -->
+                <div class="one-information">
+                    <div>
+                        <p>Min teplota</p>
+                        <p class="min-temp"></p>
+                    </div>
+                </div>
+
+                <!-- one inforamtion -->
+                <div class="one-information">
+                    <div>
+                        <p>Teplota Pocitově</p>
+                        <p class="feels-like"></p>
+                        
+                    </div>
+                </div>
+
+                <!-- one inforamtion -->
+                <div class="one-information">
+                    <div>
+                        <p>Tlak</p>
+                        <p class="pressure"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
